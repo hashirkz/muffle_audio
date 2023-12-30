@@ -22,11 +22,11 @@ cd muffle_audio
 ### conf.yml
 feel free to play around with these values to see what works best for you  
 
-hz      : butterworth lowpass filter cutoff frequency 
-roll    : strength of lowpass filter
-tones   : non time stretching pitching **tones < 0 pitch down** 
-rate    : slowing factor rate < 1 slows
-
+hz      : butterworth lowpass filter cutoff frequency   
+roll    : strength of lowpass filter  
+tones   : non time stretching pitching **tones < 0 pitch down**   
+rate    : slowing factor rate < 1 slows  
+ 
 ### ex. usage
 ```bash
 >> python3 -m __muffle__.app -r "audios" -d "muffled"
