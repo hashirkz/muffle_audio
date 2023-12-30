@@ -22,6 +22,10 @@ def fuzzify(path: str, dest: str='', _hz: float=1000.0, _roll: int=4, _tones: fl
 
 # IF NO dest_dir OVERWRITES FILES
 def fuzzify_all(read_dir: str, write_dir: str='', _hz: float=1200, _roll: int=4, _tones: float=-3, _rate: float=0.79) -> None:
+    if write_dir and not os.path.exists(write_dir):
+        logging.warning(f'creating dir: {write_dir}')
+        os.mkdir(write_dir)
+    
     for bname in os.listdir(read_dir):
         fname = os.path.join(read_dir, bname)
         # skipping non audiofiles

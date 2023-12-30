@@ -1,5 +1,7 @@
 audios
 old_stuff
-__pycache__
-*.egg-info
 .env
+__pycache__
+build
+dist
+*.egg-info

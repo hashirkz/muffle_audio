@@ -19,7 +19,7 @@ def app() -> None:
     HZ, ROLL, TONES, RATE = conf['hz'], conf['roll'], conf['tones'], conf['rate']
 
     parser = argparse.ArgumentParser(
-        prog="muffler"
+        prog="muffle"
     )
 
     file_or_dir = parser.add_mutually_exclusive_group(required=True)
